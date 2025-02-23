@@ -5,8 +5,9 @@
 ```sh
 https://thenews-front.pages.dev/
 ```
+
 ### E-mail que tem permissões
-### teste10@exemplo.com
+```sh teste10@exemplo.com ```
 
 
 ### 🚀 Introdução
