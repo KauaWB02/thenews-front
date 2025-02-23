@@ -1,5 +1,14 @@
 # 🚀 Guia de Inicialização do Projeto
 
+
+### 🚀 Ambiente online
+```sh
+https://thenews-front.pages.dev/
+```
+### E-mail que tem permissões
+### teste10@exemplo.com
+
+
 ### 🚀 Introdução
 
 Antes de tudo, obrigado por proporcionar essa experiência de aprendizado! Trabalhar com **React** tem sido incrível. Claro que não usei nem metade das funcionalidades, mas acredito que já aprendi bastante. Vamos nessa! 😃
