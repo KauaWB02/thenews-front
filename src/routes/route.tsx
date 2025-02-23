@@ -14,7 +14,6 @@ const pageTitles: { [key: string]: string } = {
   '/streak': 'Streak - The News',
 };
 
-// Função para verificar se o usuário está autenticado
 const isAuthenticated = (): boolean => {
   return getToken() !== null;
 };
@@ -42,7 +41,7 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      { path: '/dashboard', element: <Dashboard /> }, // Definindo o componente correto para a rota
+      { path: '/dashboard', element: <Dashboard /> },
     ],
   },
 
@@ -53,26 +52,21 @@ const router = createBrowserRouter([
         <AuthenticatedLayout />
       </PrivateRoute>
     ),
-    children: [
-      { path: '/streak', element: <Streak /> }, // Definindo o componente correto para a rota
-    ],
+    children: [{ path: '/streak', element: <Streak /> }],
   },
 ]);
 
 function AppRoute() {
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [, setCurrentPath] = useState(window.location.pathname);
 
   useEffect(() => {
-    // Função para atualizar o título da aba conforme a navegação muda
     const handleRouteChange = () => {
       setCurrentPath(window.location.pathname);
       document.title = pageTitles[window.location.pathname] || 'amage';
     };
 
-    // Adiciona um listener para monitorar mudanças de rota
     window.addEventListener('popstate', handleRouteChange);
-    handleRouteChange(); // Atualiza o título na carga inicial
-
+    handleRouteChange();
     return () => {
       window.removeEventListener('popstate', handleRouteChange);
     };

@@ -33,7 +33,6 @@ const ChartLine = ({ endDate, startDate, status }: OpeningsByTime) => {
 
         const labels = Object.keys(formattedData);
         const values = Object.values(formattedData);
-        console.log(labels);
         setChartData({
           labels,
           datasets: [
