@@ -5,7 +5,7 @@ import Snackbar from '../components/snackbar/Snackbar';
 import PrivateRoute from './PrivateRoute';
 import Streak from '../modules/streak/Streak';
 import AuthenticatedLayout from '../layouts/authenticated-layout/AuthenticatedLayout';
-import Dashboard from '../modules/dashboard/components/dashboard';
+import Dashboard from '../modules/dashboard/components/Dashboard';
 
 // Função para verificar se o usuário está autenticado
 const isAuthenticated = (): boolean => {
